@@ -1,0 +1,263 @@
+:root {
+   --red: #c1a8c9;
+   --bg: #c8a2c9;
+   --shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+body {
+    font-size: 1.2rem;
+    font-family: 'Work Sans', sans-serif;
+    min-height: 2000px;
+}
+
+.hero::before {
+    content: '';
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:url(img/bg.jpg);
+    background-size:cover;
+    background-position:center;
+    z-index: -1;
+}
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+}
+
+.hero h1, .hero h4, .hero p {
+    text-shadow: var(--shadow);
+}
+
+.hero h1 {
+    font-family: 'Sacramento', cursive;
+    font-size: 6rem;
+}
+
+.hero h4 {
+    font-size: 1.6rem;
+}
+
+.hero p {
+    font-size: 1.4rem;
+}
+
+.hero a {
+    color: var(--red);
+    background-color: white;
+    box-shadow: var(--shadow);
+}
+
+.hero a:hover {
+    background-color: var(--blue);
+    color: white;
+}
+
+.mynavbar {
+    background-color: rgb(200, 162, 201) !important;
+}
+
+.mynavbar .navbar-brand, .mynavbar .offcanvas-title {
+    font-family: 'Sacramento', cursive;
+    font-size: 2rem;
+}
+
+.mynavbar .nav-link {
+    font-weight: 600;
+    text-trasform: uppercase;
+}
+
+.home {
+background-image: url(img/back.png);
+background-size: cover;
+min-height: 100vh;
+    
+}
+
+.home h2,
+.info h2,
+.gallery h2,
+.rsvp h2, 
+.gifts h2 {
+    color: var(--red);
+    font-family: 'Sacramento';
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.home h3 {
+    color: #000000;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.home p {
+    font-size: 1rem;
+    }
+    
+    .home .couple {
+        margin-top: 50px;
+    }
+    
+    .home .couple h3 {
+        font-family : 'Sacramento';
+        font-size: 2.4rem;
+    }
+    
+    .home .couple img {
+        width: 100%;
+    }
+
+.info {
+    background-color: #000000;
+    color: #ffffff;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.info h2 {
+    color: var(--red);
+    font-family: 'sacramento';
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.info alamat {
+    font-size: 1.1rem;
+}
+
+.info description {
+    font-size: 1rem;
+}
+
+.info card {
+    background-color: #ffffff;
+}
+
+.gallery,
+.rsvp, 
+.gifts {
+    background-color : #fff6ff;
+}
+
+.rsvp {
+    background-color: #000000;
+}
+
+.rsvp h2,
+.gifts h2 {
+    font-size:3rem;
+}
+
+.rsvp p {
+    color: #ffffff;
+}
+
+.rsvp form label {
+    color: #ffffff;
+}
+
+.rsvp button,
+.gifts button {
+    background-color: var(--red);
+    color: #ffffff;
+    border: 1px solid var(--red);
+}
+
+.rsvp button:hover {
+    background-color: #ffffff;
+    color: var(--red);
+    border: 1px solid #ffffff;
+}
+
+.gifts a {
+    background-color: var(--red);
+    color: #ffffff;
+}
+
+
+.footer {
+    padding: 2rem;
+    background-color: var(--red);
+    color: #ffffff;
+}
+
+.footer a {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #ffffff;
+}
+
+.footer li {
+    list-style: none;
+    display: inline;
+    margin: 0.3rem;
+}
+
+.audio-icon-wrapper {
+    width: 4rem;
+    height: 4rem;
+    font-size: 4rem;
+    position: fixed;
+    bottom: 2.5rem;
+    right: 2rem;
+    cursor: pointer;
+    color: #6853ff;
+    opacity: 0.5;
+    animation: rotating 4s linear infinite;
+    transform-origin: center;
+    display: fixed;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+}
+
+@keyframes rotating {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/* media query */
+/* laptop */
+@media (max-width:992px) {
+html {font-size: 75%;
+}
+
+.simply-countdown > .simply-section{
+    padding: 70px;
+}
+
+}
+/* tablet */
+@media (max-width: 768px;) {
+    html {font-size: 65%;
+}
+
+.simply-countdown > .simply-section {
+    padding: 60px;
+    margin: 5px;
+}
+}
+/* mobile phone */
+
+@media (max-width: 576px;) {
+    html {font-size: 60%;
+}
+    
+    .simply-countdown > .simply-section {
+    padding: 45px;
+    margin: 3px;
+}
+}
+
